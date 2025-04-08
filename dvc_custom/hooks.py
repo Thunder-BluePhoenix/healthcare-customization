@@ -33,18 +33,18 @@ app_license = "mit"
 #     "/assets/dvc_custom/css/custom_login.css"
 # ]
 web_include_css = [
-    "/assets/dvc_custom/css/custom_login_trs.css"
+    "/assets/dvc_custom/css/custom_login_tt.css"
 ]
 web_include_js = [
-    "/assets/dvc_custom/js/dvc_custom_login_trs.js"
+    "/assets/dvc_custom/js/dvc_custom_login_tt.js"
 ]
 
 # Login page specific CSS and JS
 login_page_include_css = [
-    "/assets/dvc_custom/css/custom_login_trs.css"
+    "/assets/dvc_custom/css/custom_login_tt.css"
 ]
 login_page_include_js = [
-    "/assets/dvc_custom/js/dvc_custom_login_trs.js"
+    "/assets/dvc_custom/js/dvc_custom_login_tt.js"
 ]
 
 
