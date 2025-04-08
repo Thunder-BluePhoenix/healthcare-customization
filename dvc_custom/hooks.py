@@ -23,6 +23,31 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+# web_include_css = [
+#     "/assets/dvc_custom/css/custom_login.css"
+# ]
+# web_include_js = "/assets/dvc_custom/js/dvc_custom_login_r.js"
+
+# Login page specific CSS
+# login_page_include_css = [
+#     "/assets/dvc_custom/css/custom_login.css"
+# ]
+web_include_css = [
+    "/assets/dvc_custom/css/custom_login_trs.css"
+]
+web_include_js = [
+    "/assets/dvc_custom/js/dvc_custom_login_trs.js"
+]
+
+# Login page specific CSS and JS
+login_page_include_css = [
+    "/assets/dvc_custom/css/custom_login_trs.css"
+]
+login_page_include_js = [
+    "/assets/dvc_custom/js/dvc_custom_login_trs.js"
+]
+
+
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/dvc_custom/css/dvc_custom.css"
