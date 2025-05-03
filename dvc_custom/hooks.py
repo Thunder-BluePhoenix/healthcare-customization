@@ -21,6 +21,16 @@ app_license = "mit"
 # 	}
 # ]
 
+
+
+# fixtures = [
+            
+#             {"dt": "Translation", "filters": [["name", "in",("c956v3pamf"),]]}
+
+
+
+# ]
+
 # Includes in <head>
 # ------------------
 # web_include_css = [
