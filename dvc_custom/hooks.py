@@ -23,13 +23,13 @@ app_license = "mit"
 
 
 
-# fixtures = [
+fixtures = [
             
-#             {"dt": "Translation", "filters": [["name", "in",("c956v3pamf"),]]}
+            {"dt": "Translation", "filters": [["name", "in",("c956v3pamf", "1bho1m5i1p"),]]}
 
 
 
-# ]
+]
 
 # Includes in <head>
 # ------------------

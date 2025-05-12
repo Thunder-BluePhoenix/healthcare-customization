@@ -9,7 +9,7 @@ def set_uid(doc, method=None):
         doc.uid = generate_uid(doc.custom_type)
 @frappe.whitelist()
 def generate_uid(type_value):
-    prefix = "DVC" if type_value == "DVC" else "NDVC"
+    prefix = "DVC" #if type_value == "DVC" else "NDVC"
 
     current_year = datetime.now().year
     next_year = current_year + 1
