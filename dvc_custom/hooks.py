@@ -183,7 +183,8 @@ doc_events = {
 	"Patient": {
 		"before_insert": "dvc_custom.override.patient.set_uid",
 		
-	}
+	},
+    "Sales Invoice": {"on_submit":"dvc_custom.override.opd.update_opd"}
 }
 
 # Scheduled Tasks
