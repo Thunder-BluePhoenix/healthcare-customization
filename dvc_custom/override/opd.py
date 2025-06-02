@@ -47,3 +47,33 @@ def validate_qty(doc, method = None):
         drug.custom_prescribed_qty = pes_qty
         if drug.custom_given_qty == 0:
             drug.custom_given_qty = pes_qty
+
+
+
+
+
+
+@frappe.whitelist()
+def update_drug_prescriptions(updates):
+    import json
+    updates = json.loads(updates) if isinstance(updates, str) else updates
+
+    for row in updates:
+        if not row.get("name"):
+            continue
+
+        try:
+            frappe.db.set_value(
+                "Drug Prescription",
+                row["name"],
+                {
+                    "custom_given_qty": row.get("custom_given_qty"),
+                    "custom_remarkspharmacy": row.get("custom_remarkspharmacy"),
+                    "custom_clearedfrom_pharmacy": row.get("custom_clearedfrom_pharmacy"),
+                }
+            )
+        except Exception as e:
+            frappe.log_error(f"Failed to update Drug Prescription {row['name']}: {str(e)}")
+            frappe.throw(_("Error updating row: {0}").format(row["name"]))
+
+    return "success"
