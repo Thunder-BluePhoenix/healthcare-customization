@@ -46,7 +46,7 @@ def validate_qty(doc, method = None):
         pes_qty = float(period)*float(dos)
         drug.custom_prescribed_qty = pes_qty
         if drug.custom_given_qty == 0:
-            drug.custom_given_qty = pes_qty
+            drug.custom_given_qty = drug.custom_prescribed_qtyby_doctor
 
 
 
