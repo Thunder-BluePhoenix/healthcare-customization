@@ -1,10 +1,13 @@
 frappe.ui.form.on('Patient Encounter', {
     refresh: function (frm) {
-        frm.add_custom_button('Update Drug Prescriptions', () => {
-            open_prescription_modal(frm);
-        });
+        if (frm.doc.docstatus === 1) {
+            frm.add_custom_button('Update Drug Prescriptions', () => {
+                open_prescription_modal(frm);
+            });
+        }
     }
 });
+
 
 function open_prescription_modal(frm) {
     const fields = [
