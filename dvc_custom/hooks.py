@@ -25,7 +25,8 @@ app_license = "mit"
 
 fixtures = [
             
-            {"dt": "Translation", "filters": [["name", "in",("c956v3pamf", "1bho1m5i1p"),]]}
+            {"dt": "Translation", "filters": [["name", "in",("c956v3pamf", "1bho1m5i1p"),]]},
+            {"dt": "Role Profile"}
 
 
 
@@ -34,7 +35,8 @@ fixtures = [
 # Includes in <head>
 # ------------------
 # web_include_css = [
-#     "/assets/dvc_custom/css/custom_login.css"
+#     "/assets/dvc_custom/css/custom_login.css".
+
 # ]
 # web_include_js = "/assets/dvc_custom/js/dvc_custom_login_r.js"
 
