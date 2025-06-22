@@ -365,7 +365,7 @@
    "name": "Patient-custom_dvc_type",
    "no_copy": 0,
    "non_negative": 0,
-   "options": "Dependent of employee - Multiple (Family)\nCISF Employee\nDependent of CISF\nCasual Worker / Dependent\nSupply worker / Dependent\nForestry Worker \nCanteen Worker\nSIP worker\nCo-operative worker\nContractual/Fixed-term employee",
+   "options": "Self(DVC Employee)\nDependent of employee - Multiple (Family)\nCISF Employee\nDependent of CISF\nCasual Worker / Dependent\nSupply worker / Dependent\nForestry Worker \nCanteen Worker\nSIP worker\nCo-operative worker\nContractual/Fixed-term employee",
    "owner": "Administrator",
    "permlevel": 0,
    "placeholder": null,
