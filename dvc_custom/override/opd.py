@@ -77,3 +77,17 @@ def update_drug_prescriptions(updates):
             frappe.throw(_("Error updating row: {0}").format(row["name"]))
 
     return "success"
+
+
+
+
+from healthcare.healthcare.doctype.patient_encounter.patient_encounter import PatientEncounter as OriginalPatientEncounter
+
+class CustomPatientEncounter(OriginalPatientEncounter):
+    def validate_medications(self):
+        # Your custom logic here
+        # Example: skip the validation
+        for item in self.drug_prescription:
+            if not item.drug_code:
+                # Instead of throwing, log or handle gracefully
+                frappe.msgprint(f"Warning: Drug Code missing for Row #{item.idx}")

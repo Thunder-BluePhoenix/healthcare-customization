@@ -170,6 +170,9 @@ doctype_js = {"Patient" : "public/js/patient.js",
 # override_doctype_class = {
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
+override_doctype_class = {
+    "Patient Encounter": "dvc_custom.override.opd.CustomPatientEncounter"
+}
 
 # Document Events
 # ---------------
