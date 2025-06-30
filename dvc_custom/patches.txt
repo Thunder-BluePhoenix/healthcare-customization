@@ -5,4 +5,4 @@
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
 
-dvc_custom.patches.emp_doc #-2
+# dvc_custom.patches.emp_doc #-2
