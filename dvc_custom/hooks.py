@@ -82,7 +82,7 @@ login_page_include_js = [
 # include js in doctype views
 doctype_js = {"Patient" : "public/js/patient.js",
               "Patient Encounter": "public/js/opd.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {"Employee" : "public/js/emp_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
