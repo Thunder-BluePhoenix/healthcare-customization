@@ -749,7 +749,7 @@
    "name": "Patient-custom_type_of_dependent",
    "no_copy": 0,
    "non_negative": 0,
-   "options": "Wife\nSon\nDaughter\nMather\nFather\nSister\nBrother",
+   "options": "\nWife\nHusband\nSon\nDaughter\nMother\nFather\nSister\nBrother",
    "owner": "Administrator",
    "permlevel": 0,
    "placeholder": null,
